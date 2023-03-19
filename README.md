@@ -34,8 +34,8 @@ End the program and close the output video windows by pressing 'q'.
 
 ## Program:
 
-### Developed By: Gunaseelan G
-### Register No: 212221230031
+### Developed By: Javith Farkhan
+### Register No: 212221240017
 
 ## i) Write the frame as JPG file
 ```
@@ -82,7 +82,7 @@ while True:
     image[:height//2,width//2:]=smaller_frame
     image[height//2:,width//2:]=smaller_frame
     
-    cv2.imshow('frame',image)
+    cv2.imshow('new',image)
     if cv2.waitKey(1) == ord('q'):
         break
 cap.release()
@@ -107,7 +107,7 @@ while True:
     image[height//2:,:width//2]=cv2.rotate(smaller_frame,cv2.ROTATE_180)
     image[:height//2,width//2:]=smaller_frame
     image[height//2:,width//2:]=cv2.rotate(smaller_frame,cv2.ROTATE_180)
-    cv2.imshow('frame',image)
+    cv2.imshow('new',image)
     if cv2.waitKey(1) == ord('q'):
         break
 cap.release()
@@ -117,28 +117,21 @@ cv2.destroyAllWindows()
 ## Output
 
 ### i) Write the frame as JPG image
-</br>
 
-</br>
+![first](https://user-images.githubusercontent.com/94296805/226169682-6df370e7-ee9a-4c63-91af-77237841e0e6.png)
 
 
 ### ii) Display the video
-</br>
-
-</br>
+![second](https://user-images.githubusercontent.com/94296805/226169687-af677d47-8162-4b48-9593-fceaf0502afe.png)
 
 
 ### iii) Display the video by resizing the window
-</br>
-
-</br>
-
+![quadrant](https://user-images.githubusercontent.com/94296805/226169692-338855c2-a14a-44c4-b970-3e669b5d5763.png)
 
 
 ### iv) Rotate and display the video
-</br>
 
-</br>
+![rotate](https://user-images.githubusercontent.com/94296805/226169700-9d4fadf0-4317-4f06-b1d7-bf876686d020.png)
 
 
 
